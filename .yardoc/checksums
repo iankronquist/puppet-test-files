@@ -1,0 +1,3 @@
+manifests/init.pp 6fd9ae1c060219db23d2008cee75a0ca901b2cdd
+lib/puppet/functions/4x_function.rb af9c65b4007e7293b75d7fbd4cc80921c89921ec
+lib/puppet/parser/functions/function3x.rb 68bc395aeb0f817422c1fab944fbdbffe7ef5f2f
