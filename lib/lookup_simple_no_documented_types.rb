@@ -1,7 +1,3 @@
-# @param name Variant[String,Array[String]] text
-# @param value_type Optional[Type] text
-# @param merge Optional[Variant[String[1],Hash[String,Scalar]]] text
-# @param default_value Any text
 Puppet::Functions.create_function(:lookup, Puppet::Functions::InternalFunction) do
   dispatch :lookup_1 do
     param           'Variant[String,Array[String]]',       :name
@@ -13,7 +9,7 @@ Puppet::Functions.create_function(:lookup, Puppet::Functions::InternalFunction) 
     param  'Variant[String,Array[String]]',         :name
     param  'Optional[Type]',   :value_type
     param  'Optional[Variant[String[1],Hash[String,Scalar]]]',        :merge
-    param  'Any', :default_value
+    param  'String', :default_value
   end
 
   def lookup_1(scope, name, value_type=nil, merge=nil)
