@@ -3,7 +3,7 @@
 # @param nameservers [String] Don't ask me what this does, I'm a dev not an op!
 # @param default_lease_time [Integer[1024, 8192]] text goes here
 # @param max_lease_time does stuff
-class dhcp (
+class outer (
 		$dnsdomain,
 		$nameservers,
 		$default_lease_time = 3600,
@@ -12,7 +12,7 @@ class dhcp (
 	# @param options [String[5,7]] What does iburst even mean?
 	# @param multicast [Boolean] foobar
 	# @param totally_not_a_thing yep, that's right
-	class ntp (
+	class inner (
       $options   = "iburst",
       $servers,
       $multicast = false
