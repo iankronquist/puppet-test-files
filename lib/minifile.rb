@@ -1,8 +1,8 @@
-
+# @!puppet.type.param a [Integer] b
 Puppet::Type.newtype(:minifile) do
 
   @doc = "Manages files, including their content, ownership, and permissions.
-    The provider can manage symbolic links."
+     The provider can manage symbolic links."
 
   def self.title_patterns
     [ [ /^(.*?)\/*\Z/m, [ [ :path ] ] ] ]
